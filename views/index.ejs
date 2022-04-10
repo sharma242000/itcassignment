@@ -1,0 +1,231 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Video Request</h1>
+    <form action="" method="POST">
+      <div>
+        <label for="request">Request</label>
+        <textarea name="request" id="request" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <a href="/home"> <button >home</button></a>
+  </body>
+</html> -->
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .mainLoginInput::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    opacity: 1;
+    /* Firefox */
+  }
+  
+  .mainLoginInput:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: poppins, Arial, Helvetica, sans-serif;
+  }
+  
+  .mainLoginInput::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-family: poppins, Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-family: poppins, sans-serif;
+    /* color: white; */
+  }
+  
+  h1 {
+    padding: 2rem 0;
+  }
+  
+  input,
+  select,
+  button,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display: block;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    margin: 50px auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 50px auto;
+    width: 70%;
+  }
+  
+  form {
+    background: #ffa500;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.5rem;
+  }
+  
+  @media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 560px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  .label-item {
+    font-weight: 600;
+    line-height: 1.025rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4rem;
+  }
+  
+  .clue {
+    font-weight: 400;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+  }
+  
+  .form-control,
+  .input-textarea {
+    display: block;
+    padding: 0 0 0 5px;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  /* .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  } */
+  
+  .input-textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-item {
+    margin: 0 auto 1rem auto;
+    padding: 0.25rem;
+  }
+  
+  .input-radio,
+  .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1rem;
+    min-width: 1rem;
+  }
+  
+  #submit-explain {
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #submit {
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    background: #005AFF;
+    border: 2px solid #005AFF;
+    color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  
+  #submit:hover {
+    /* background-color: lightskyblue;
+    border: 2px solid lightskyblue;
+    color: black; */
+    transform: scale(1.2, 1.2);
+  }
+</style>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">
+        BILL REIMBURSEMENT FORM
+      </h1>
+      <p id="note">
+        (Upload your bill in google drive and give access to #######)
+      </p>
+    </header>
+    <form action="" method="POST">
+      <!-- Roll no. -->
+      <div class="form-item">
+        <label for="rollno" id="label-three" class="label-item">Roll no.<span class="requred">*</span>:</label>
+        <input type="rollno" required name="rollno" class="form-control" placeholder="Enter your rollno">
+      </div>
+      <!-- Name -->
+      <div class="form-item">
+        <label for="name" id="label-two" class="label-item">Full name<span class="requred">*</span>:</label>
+        <input type="text" required name="name" class="form-control" placeholder="Enter your full name">
+      </div>
+
+      <!-- Link -->
+      <div class="form-item">
+        <p class="label-item">Link of google drive<span class="clue">(city, zipcode, street, bld., apt.)</span></p>
+        <textarea id="link" required name="link" class="input-textarea"
+          placeholder="Enter your link here"></textarea>
+      </div>
+
+
+
+
+
+      <!-- button -->
+
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+  <a href="/"> <button >home</button></a>
+</body>
