@@ -1,0 +1,16 @@
+POST https://gymkhana.iitb.ac.in/profiles/oauth/token/
+Authorization: Basic UmczZVRyWXZXVzNtZ2VhZGhEUDRtVmFHWjNtazdPVUZzZ2lMRlAzSjptVmhLdXlKcFVZZXFjd0dlWmRVTTFwUDUzY00zUkNFYUtsV3BjVFhzcDIybFpaZHZYakVBVlVZMjcxSzRUWFltb1dpUjN6c3RmRW1DU0VjMlE1ekMwZnFNdGVFVDU4MjlGTnp5SldrN2I4SVluUWdqaHJ5MnpoeFBRU2Y2QXpYUg==
+content-type: application/x-www-form-urlencoded; charset=UTF-8
+
+refresh_token=uMXQF81iTWMiKVSdU2TrCuR8mm8nfh&redirect_uri=http://localhost:1337/home&grant_type=refresh_token
+
+###
+
+POST https://gymkhana.iitb.ac.in/profiles/oauth/token&
+                       content-type='application/x-www-form-urlencoded'&
+                       Authorization=Basic UmczZVRyWXZXVzNtZ2VhZGhEUDRtVmFHWjNtazdPVUZzZ2lMRlAzSjptVmhLdXlKcFVZZXFjd0dlWmRVTTFwUDUzY00zUkNFYUtsV3BjVFhzcDIybFpaZHZYakVBVlVZMjcxSzRUWFltb1dpUjN6c3RmRW1DU0VjMlE1ekMwZnFNdGVFVDU4MjlGTnp5SldrN2I4SVluUWdqaHJ5MnpoeFBRU2Y2QXpYUg==
+                       
+                       grant_type=authorization_code&
+                       code=vYyUxKSS3sA0xLj8bK9NkhXTNsZsRN&
+                       redirect_uri=http://localhost:1337/home
+

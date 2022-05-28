@@ -237,7 +237,7 @@
 <body>
 
 <div class="panel">
-    <% for(var i=1; i < data.length; i++) { %>
+    <% for(var i=1; i < data.length; i++) {  if(data[i][0]==d[1]){%>
     <br>
     <details>
         <summary>
@@ -249,9 +249,10 @@
         </summary>
         <div class="content">
             <p>Status:<%= data[i][12] %></p>
+            <p>Status:<%= d[0] %></p>
         </div>
     </details>
-    <% } %>
+    <% }} %>
 
 
 
